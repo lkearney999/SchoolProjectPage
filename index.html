@@ -5,13 +5,13 @@
 #pt1 {
     font-family: "Times New Roman", Times, serif;
 }
-#boxone {
+#1 {
 	position:fixed;
     background-color: blue;
 	height: 200px;
     width: 200px;
 	top: 16px;
-	opacity: 0.5;
+	opacity: 1.0;
 }
 #boxtwo {
     background-color: red;
@@ -25,15 +25,15 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
- $("#boxone").mouseenter(function() {
+ $("#1").mouseenter(function() {
 		i = $("#onee");
-		p = $("#boxone");
+		p = $("#1");
         p.animate({height: '300px', width: '300px'}, "slow");
 		i.animate({height: '300px', width: '300px'}, "slow");
 		});
- $("#boxone").mouseleave(function() {
+ $("#1").mouseleave(function() {
 		i = $("#onee");
-		p = $("#boxone");
+		p = $("#1");
         p.animate({height: '200px', width: '200px'}, "slow");
 		i.animate({height: '200px', width: '200px'}, "slow");
 		});
@@ -51,7 +51,7 @@ $(document).ready(function(){
 </head>
 <body>
 <p id="boxtwo"></p>
-<p id="boxone"></p>'
+<p id="1"></p>'
 <h1>Web Design</h1>
 <p id="pt1">Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; interface design; authoring, including standardised code and proprietary software; user experience design; and search engine optimization. Often many individuals will work in teams covering different aspects of the design process, although some designers will cover them all.[1] The term web design is normally used to describe the design process relating to the front-end (client side) design of a website including writing mark up. Web design partially overlaps web engineering in the broader scope of web development. Web designers are expected to have an awareness of usability and if their role involves creating mark up then they are also expected to be up to date with web accessibility guidelines.</p>
 <h1>History</h1>
