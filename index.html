@@ -132,17 +132,25 @@ $(document).ready(function(){
 $("#texta").hide();
  $("#a").click(function() {
 		p = $("#a");
-		f = $("#foot")
+		f = $("#foot");
 		f.animate({height: '500px', width: '600px'}, "slow");
         	p.animate({height: '600px', width: '600px'}, "slow");
 		$("#texta").show();
 		});
+ $("#a").mouseenter(function() {
+	 	p = $("#a");
+		f = $("#foot");
+	 	f.fadeTo( "slow", 1.0 );
+		p.fadeTo( "slow", 1.0 );
+ 		})
  $("#a").mouseleave(function() {
 		p = $("#a");
 		f = $("#foot")
 		f.animate({height: '200px', width: '200px'}, "slow");
         	p.animate({height: '200px', width: '200px'}, "slow");
 		$("#texta").hide();
+	 	f.fadeTo( "slow", 0.7 );
+		p.fadeTo( "slow", 0.7 );
 		});
  $("#b").click(function() {
 		p = $("#b");
